@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A0EF30B1EDF0F1E00458537 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EF30A1EDF0F1E00458537 /* TutorialViewController.swift */; };
+		3A8C46A81EDE0CD80044767B /* Tutorial.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C46A71EDE0CD80044767B /* Tutorial.sks */; };
+		3A8C46AA1EDE0E9B0044767B /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C46A91EDE0E9B0044767B /* Tutorial.swift */; };
+		3AA567E11EDC947B0054562D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA567E01EDC947B0054562D /* AppDelegate.swift */; };
+		3AA567E31EDC947B0054562D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3AA567E21EDC947B0054562D /* GameScene.sks */; };
+		3AA567E51EDC947B0054562D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3AA567E41EDC947B0054562D /* Actions.sks */; };
+		3AA567E71EDC947B0054562D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA567E61EDC947B0054562D /* GameScene.swift */; };
+		3AA567E91EDC947B0054562D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA567E81EDC947B0054562D /* GameViewController.swift */; };
+		3AA567EC1EDC947B0054562D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA567EA1EDC947B0054562D /* Main.storyboard */; };
+		3AA567EE1EDC947B0054562D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA567ED1EDC947B0054562D /* Assets.xcassets */; };
+		3AA567F11EDC947B0054562D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA567EF1EDC947B0054562D /* LaunchScreen.storyboard */; };
+		3AA568051EDC96C20054562D /* I-pixel-u.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA567F91EDC96C20054562D /* I-pixel-u.ttf */; };
+		3AA568061EDC96C20054562D /* pixel_astronaut.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA567FB1EDC96C20054562D /* pixel_astronaut.png */; };
+		3AA568071EDC96C20054562D /* pixel_earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA567FC1EDC96C20054562D /* pixel_earth.png */; };
+		3AA568081EDC96C20054562D /* enemyShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3AA567FE1EDC96C20054562D /* enemyShader.fsh */; };
+		3AA568091EDC96C20054562D /* backgroundmusic.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3AA568001EDC96C20054562D /* backgroundmusic.mp4 */; };
+		3AA5680A1EDC96C20054562D /* hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3AA568011EDC96C20054562D /* hit.wav */; };
+		3AA5680B1EDC96C20054562D /* score.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3AA568021EDC96C20054562D /* score.wav */; };
+		3AA5680C1EDC96C20054562D /* background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3AA568041EDC96C20054562D /* background.mp4 */; };
+		3AA5680E1EDC9B510054562D /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3AA5680D1EDC9B510054562D /* StarField.sks */; };
+		3AA568101EDC9FE20054562D /* AsteroidsBeltNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5680F1EDC9FE20054562D /* AsteroidsBeltNode.swift */; };
+		3AA99E0F1EEED870004D777F /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA99E0E1EEED870004D777F /* Starjedi.ttf */; };
+		3AA99E111EEED880004D777F /* STJEDISE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 3AA99E101EEED880004D777F /* STJEDISE.TTF */; };
+		3AA99E131EEED89F004D777F /* Stjldbl1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA99E121EEED89F004D777F /* Stjldbl1.ttf */; };
+		3AF67F311EDDDAF700EC7E96 /* Propulsor.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3AF67F301EDDDAF700EC7E96 /* Propulsor.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A0EF30A1EDF0F1E00458537 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		3A8C46A71EDE0CD80044767B /* Tutorial.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tutorial.sks; sourceTree = "<group>"; };
+		3A8C46A91EDE0E9B0044767B /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
+		3AA567DD1EDC947B0054562D /* Survivor Astronaut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Survivor Astronaut.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA567E01EDC947B0054562D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3AA567E21EDC947B0054562D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		3AA567E41EDC947B0054562D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		3AA567E61EDC947B0054562D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		3AA567E81EDC947B0054562D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3AA567EB1EDC947B0054562D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AA567ED1EDC947B0054562D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AA567F01EDC947B0054562D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AA567F21EDC947B0054562D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AA567F91EDC96C20054562D /* I-pixel-u.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "I-pixel-u.ttf"; sourceTree = "<group>"; };
+		3AA567FB1EDC96C20054562D /* pixel_astronaut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pixel_astronaut.png; sourceTree = "<group>"; };
+		3AA567FC1EDC96C20054562D /* pixel_earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pixel_earth.png; sourceTree = "<group>"; };
+		3AA567FE1EDC96C20054562D /* enemyShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = enemyShader.fsh; sourceTree = "<group>"; };
+		3AA568001EDC96C20054562D /* backgroundmusic.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundmusic.mp4; sourceTree = "<group>"; };
+		3AA568011EDC96C20054562D /* hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hit.wav; sourceTree = "<group>"; };
+		3AA568021EDC96C20054562D /* score.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = score.wav; sourceTree = "<group>"; };
+		3AA568041EDC96C20054562D /* background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background.mp4; sourceTree = "<group>"; };
+		3AA5680D1EDC9B510054562D /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
+		3AA5680F1EDC9FE20054562D /* AsteroidsBeltNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsteroidsBeltNode.swift; sourceTree = "<group>"; };
+		3AA99E0B1EEED816004D777F /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
+		3AA99E0E1EEED870004D777F /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		3AA99E101EEED880004D777F /* STJEDISE.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = STJEDISE.TTF; sourceTree = "<group>"; };
+		3AA99E121EEED89F004D777F /* Stjldbl1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Stjldbl1.ttf; sourceTree = "<group>"; };
+		3AF67F301EDDDAF700EC7E96 /* Propulsor.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Propulsor.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AA567DA1EDC947B0054562D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AA567D41EDC947B0054562D = {
+			isa = PBXGroup;
+			children = (
+				3AA567DF1EDC947B0054562D /* Survivor Astronaut */,
+				3AA567DE1EDC947B0054562D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AA567DE1EDC947B0054562D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AA567DD1EDC947B0054562D /* Survivor Astronaut.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AA567DF1EDC947B0054562D /* Survivor Astronaut */ = {
+			isa = PBXGroup;
+			children = (
+				3AA567E01EDC947B0054562D /* AppDelegate.swift */,
+				3AA567E21EDC947B0054562D /* GameScene.sks */,
+				3A8C46A71EDE0CD80044767B /* Tutorial.sks */,
+				3AF67F301EDDDAF700EC7E96 /* Propulsor.sks */,
+				3AA5680D1EDC9B510054562D /* StarField.sks */,
+				3AA567F81EDC96C20054562D /* Font */,
+				3AA567FA1EDC96C20054562D /* Images */,
+				3AA567FD1EDC96C20054562D /* Shaders */,
+				3AA567FF1EDC96C20054562D /* Sounds */,
+				3AA568031EDC96C20054562D /* Videos */,
+				3AA567E41EDC947B0054562D /* Actions.sks */,
+				3AA567E61EDC947B0054562D /* GameScene.swift */,
+				3AA5680F1EDC9FE20054562D /* AsteroidsBeltNode.swift */,
+				3A8C46A91EDE0E9B0044767B /* Tutorial.swift */,
+				3AA567E81EDC947B0054562D /* GameViewController.swift */,
+				3A0EF30A1EDF0F1E00458537 /* TutorialViewController.swift */,
+				3AA567EA1EDC947B0054562D /* Main.storyboard */,
+				3AA567ED1EDC947B0054562D /* Assets.xcassets */,
+				3AA567EF1EDC947B0054562D /* LaunchScreen.storyboard */,
+				3AA567F21EDC947B0054562D /* Info.plist */,
+			);
+			path = "Survivor Astronaut";
+			sourceTree = "<group>";
+		};
+		3AA567F81EDC96C20054562D /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				3AA567F91EDC96C20054562D /* I-pixel-u.ttf */,
+				3AA99E101EEED880004D777F /* STJEDISE.TTF */,
+				3AA99E0E1EEED870004D777F /* Starjedi.ttf */,
+				3AA99E121EEED89F004D777F /* Stjldbl1.ttf */,
+				3AA99E0B1EEED816004D777F /* Starjout.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		3AA567FA1EDC96C20054562D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3AA567FB1EDC96C20054562D /* pixel_astronaut.png */,
+				3AA567FC1EDC96C20054562D /* pixel_earth.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3AA567FD1EDC96C20054562D /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				3AA567FE1EDC96C20054562D /* enemyShader.fsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		3AA567FF1EDC96C20054562D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3AA568001EDC96C20054562D /* backgroundmusic.mp4 */,
+				3AA568011EDC96C20054562D /* hit.wav */,
+				3AA568021EDC96C20054562D /* score.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		3AA568031EDC96C20054562D /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				3AA568041EDC96C20054562D /* background.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AA567DC1EDC947B0054562D /* Survivor Astronaut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AA567F51EDC947B0054562D /* Build configuration list for PBXNativeTarget "Survivor Astronaut" */;
+			buildPhases = (
+				3AA567D91EDC947B0054562D /* Sources */,
+				3AA567DA1EDC947B0054562D /* Frameworks */,
+				3AA567DB1EDC947B0054562D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Survivor Astronaut";
+			productName = "Survivor Astronaut";
+			productReference = 3AA567DD1EDC947B0054562D /* Survivor Astronaut.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AA567D51EDC947B0054562D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Paulo Henrique Favero Pereira";
+				TargetAttributes = {
+					3AA567DC1EDC947B0054562D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6HCFLY24V4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3AA567D81EDC947B0054562D /* Build configuration list for PBXProject "Survivor Astronaut" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AA567D41EDC947B0054562D;
+			productRefGroup = 3AA567DE1EDC947B0054562D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AA567DC1EDC947B0054562D /* Survivor Astronaut */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AA567DB1EDC947B0054562D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA5680A1EDC96C20054562D /* hit.wav in Resources */,
+				3AA5680B1EDC96C20054562D /* score.wav in Resources */,
+				3AA99E131EEED89F004D777F /* Stjldbl1.ttf in Resources */,
+				3AA99E111EEED880004D777F /* STJEDISE.TTF in Resources */,
+				3AA567EC1EDC947B0054562D /* Main.storyboard in Resources */,
+				3AA568081EDC96C20054562D /* enemyShader.fsh in Resources */,
+				3AA99E0F1EEED870004D777F /* Starjedi.ttf in Resources */,
+				3AA568061EDC96C20054562D /* pixel_astronaut.png in Resources */,
+				3AA568091EDC96C20054562D /* backgroundmusic.mp4 in Resources */,
+				3AA568051EDC96C20054562D /* I-pixel-u.ttf in Resources */,
+				3AA567E31EDC947B0054562D /* GameScene.sks in Resources */,
+				3AF67F311EDDDAF700EC7E96 /* Propulsor.sks in Resources */,
+				3AA567EE1EDC947B0054562D /* Assets.xcassets in Resources */,
+				3AA567F11EDC947B0054562D /* LaunchScreen.storyboard in Resources */,
+				3AA567E51EDC947B0054562D /* Actions.sks in Resources */,
+				3AA5680E1EDC9B510054562D /* StarField.sks in Resources */,
+				3AA5680C1EDC96C20054562D /* background.mp4 in Resources */,
+				3AA568071EDC96C20054562D /* pixel_earth.png in Resources */,
+				3A8C46A81EDE0CD80044767B /* Tutorial.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AA567D91EDC947B0054562D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA567E71EDC947B0054562D /* GameScene.swift in Sources */,
+				3AA568101EDC9FE20054562D /* AsteroidsBeltNode.swift in Sources */,
+				3AA567E91EDC947B0054562D /* GameViewController.swift in Sources */,
+				3AA567E11EDC947B0054562D /* AppDelegate.swift in Sources */,
+				3A0EF30B1EDF0F1E00458537 /* TutorialViewController.swift in Sources */,
+				3A8C46AA1EDE0E9B0044767B /* Tutorial.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3AA567EA1EDC947B0054562D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AA567EB1EDC947B0054562D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3AA567EF1EDC947B0054562D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AA567F01EDC947B0054562D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AA567F31EDC947B0054562D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AA567F41EDC947B0054562D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AA567F61EDC947B0054562D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6HCFLY24V4;
+				INFOPLIST_FILE = "Survivor Astronaut/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.paulo.teste.Survivor-Astronaut";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3AA567F71EDC947B0054562D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6HCFLY24V4;
+				INFOPLIST_FILE = "Survivor Astronaut/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.paulo.teste.Survivor-Astronaut";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AA567D81EDC947B0054562D /* Build configuration list for PBXProject "Survivor Astronaut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA567F31EDC947B0054562D /* Debug */,
+				3AA567F41EDC947B0054562D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AA567F51EDC947B0054562D /* Build configuration list for PBXNativeTarget "Survivor Astronaut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA567F61EDC947B0054562D /* Debug */,
+				3AA567F71EDC947B0054562D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AA567D51EDC947B0054562D /* Project object */;
+}
