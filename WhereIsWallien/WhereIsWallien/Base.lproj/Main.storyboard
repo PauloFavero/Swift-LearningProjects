@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xIr-Uh-aDx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ALIEN5.TTF">
+            <string>AlienLeague</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tutorial-->
+        <scene sceneID="ebL-cb-5M7">
+            <objects>
+                <viewController storyboardIdentifier="Tutorial" title="Tutorial" id="sDW-sS-ttM" customClass="TutorialController" customModule="WhereIsWallien" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ber-fq-NaE"/>
+                        <viewControllerLayoutGuide type="bottom" id="6eD-au-MSM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5DW-7t-cnt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rJ-wH-jh0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <outlet property="delegate" destination="sDW-sS-ttM" id="7CT-Pf-zOs"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="7" translatesAutoresizingMaskIntoConstraints="NO" id="XNI-AP-2KH">
+                                <rect key="frame" x="136" y="610" width="103" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAQ-yr-TvU">
+                                <rect key="frame" x="325" y="30" width="30" height="30"/>
+                                <state key="normal" title="skip"/>
+                                <connections>
+                                    <segue destination="xIr-Uh-aDx" kind="show" identifier="SkipButton" id="Cbz-xv-Tdt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pAQ-yr-TvU" secondAttribute="trailing" constant="20" id="8Fg-By-YwC"/>
+                            <constraint firstItem="XNI-AP-2KH" firstAttribute="centerX" secondItem="5DW-7t-cnt" secondAttribute="centerX" id="CTf-6s-ok2"/>
+                            <constraint firstItem="6eD-au-MSM" firstAttribute="top" secondItem="1rJ-wH-jh0" secondAttribute="bottom" id="Drg-Er-amP"/>
+                            <constraint firstAttribute="leading" secondItem="1rJ-wH-jh0" secondAttribute="leading" id="HVS-Pc-lpD"/>
+                            <constraint firstItem="1rJ-wH-jh0" firstAttribute="top" secondItem="Ber-fq-NaE" secondAttribute="bottom" id="J0S-nu-3HG"/>
+                            <constraint firstItem="pAQ-yr-TvU" firstAttribute="top" secondItem="Ber-fq-NaE" secondAttribute="bottom" constant="10" id="RZt-L4-6Z6"/>
+                            <constraint firstItem="6eD-au-MSM" firstAttribute="top" secondItem="XNI-AP-2KH" secondAttribute="bottom" constant="20" id="VXc-8Y-SEU"/>
+                            <constraint firstAttribute="trailing" secondItem="1rJ-wH-jh0" secondAttribute="trailing" id="aW7-Fu-Ka3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="XNI-AP-2KH" id="xZx-ii-tSB"/>
+                        <outlet property="scrollView" destination="1rJ-wH-jh0" id="7wo-W3-MHl"/>
+                        <outlet property="skipTutorial" destination="pAQ-yr-TvU" id="7uK-j7-cGJ"/>
+                        <segue destination="xIr-Uh-aDx" kind="show" identifier="LaunchedBefore" id="6Kd-mI-UZu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zbd-Pi-0kp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="293"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="vrc-md-2Tm">
+            <objects>
+                <viewController id="XmK-Xh-7FM" customClass="GameViewController" customModule="WhereIsWallien" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="090-PE-CLj"/>
+                        <viewControllerLayoutGuide type="bottom" id="tWp-3W-Plp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ms4-MM-EBf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="LG4-SZ-uQh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaH-7m-ktv">
+                                        <rect key="frame" x="0.0" y="0.0" width="1795" height="1122"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjG-oG-Cn4">
+                                                <rect key="frame" x="97" y="933" width="30" height="69"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="69" id="TyP-1p-FJ0"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="ug8-bt-C11" kind="show" id="4Wt-EK-Uvd"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WallienMap" translatesAutoresizingMaskIntoConstraints="NO" id="j26-DU-bHc">
+                                                <rect key="frame" x="0.0" y="0.0" width="1795" height="1122"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="j26-DU-bHc" firstAttribute="leading" secondItem="LaH-7m-ktv" secondAttribute="leading" id="5of-pa-mLL"/>
+                                            <constraint firstAttribute="trailing" secondItem="j26-DU-bHc" secondAttribute="trailing" id="BXc-cg-w2e"/>
+                                            <constraint firstAttribute="bottom" secondItem="BjG-oG-Cn4" secondAttribute="bottom" constant="120" id="Flb-VX-W6d"/>
+                                            <constraint firstItem="j26-DU-bHc" firstAttribute="top" secondItem="LaH-7m-ktv" secondAttribute="top" id="KDO-aC-8AV"/>
+                                            <constraint firstAttribute="bottom" secondItem="j26-DU-bHc" secondAttribute="bottom" id="gXB-Pn-olL"/>
+                                            <constraint firstItem="BjG-oG-Cn4" firstAttribute="leading" secondItem="LaH-7m-ktv" secondAttribute="leading" constant="97" id="hNN-0P-frW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="LaH-7m-ktv" secondAttribute="bottom" constant="-475" id="0mk-FH-QP2"/>
+                                    <constraint firstAttribute="trailing" secondItem="LaH-7m-ktv" secondAttribute="trailing" constant="-1420" id="enZ-gS-G4S"/>
+                                    <constraint firstItem="LaH-7m-ktv" firstAttribute="leading" secondItem="LG4-SZ-uQh" secondAttribute="leading" id="koZ-vP-n4H"/>
+                                    <constraint firstItem="LaH-7m-ktv" firstAttribute="top" secondItem="LG4-SZ-uQh" secondAttribute="top" id="qVy-ZN-Ms6"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="XmK-Xh-7FM" id="xw4-NE-0Kn"/>
+                                </connections>
+                            </scrollView>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVx-Vr-KOb" customClass="ClockView" customModule="WhereIsWallien" customModuleProvider="target">
+                                <rect key="frame" x="272" y="20" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="markColor">
+                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundClipColor">
+                                        <color key="value" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95639318227767944" green="0.96844011545181274" blue="0.98496979475021362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LG4-SZ-uQh" firstAttribute="leading" secondItem="ms4-MM-EBf" secondAttribute="leading" id="KDY-dY-2jH"/>
+                            <constraint firstAttribute="trailing" secondItem="LG4-SZ-uQh" secondAttribute="trailing" id="Mt4-8I-qNg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mVx-Vr-KOb" secondAttribute="trailing" constant="-13" id="WP0-f2-VLB"/>
+                            <constraint firstItem="mVx-Vr-KOb" firstAttribute="leading" secondItem="ms4-MM-EBf" secondAttribute="leading" constant="272" id="d05-Fr-01i"/>
+                            <constraint firstItem="LG4-SZ-uQh" firstAttribute="bottom" secondItem="tWp-3W-Plp" secondAttribute="top" id="fzm-O2-Ooc"/>
+                            <constraint firstItem="tWp-3W-Plp" firstAttribute="top" secondItem="mVx-Vr-KOb" secondAttribute="bottom" constant="547" id="gYk-O7-K3T"/>
+                            <constraint firstItem="LG4-SZ-uQh" firstAttribute="top" secondItem="090-PE-CLj" secondAttribute="bottom" id="sq4-Nh-V1Y"/>
+                            <constraint firstItem="LG4-SZ-uQh" firstAttribute="top" secondItem="mVx-Vr-KOb" secondAttribute="top" id="wVG-IR-23m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clock" destination="mVx-Vr-KOb" id="zIs-61-pj1"/>
+                        <outlet property="contentView" destination="LaH-7m-ktv" id="rt4-83-idw"/>
+                        <outlet property="scrollMap" destination="LG4-SZ-uQh" id="kuc-Gi-Wx2"/>
+                        <segue destination="wW2-QE-4w7" kind="show" identifier="gameOver" id="RWA-h3-O9g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65c-qQ-OVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1350" y="1173"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="i14-od-vUZ">
+            <objects>
+                <viewController id="wW2-QE-4w7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T02-Lu-AOX"/>
+                        <viewControllerLayoutGuide type="bottom" id="dSb-mC-Kdy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pCa-sN-1WP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game over wallien" translatesAutoresizingMaskIntoConstraints="NO" id="QUm-a3-npc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKA-fe-Apc">
+                                <rect key="frame" x="60" y="604" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AlienLeague" family="Alien League" pointSize="17"/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <segue destination="XmK-Xh-7FM" kind="show" id="DaG-Na-1Y5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3t-dh-0rF">
+                                <rect key="frame" x="234" y="604" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AlienLeague" family="Alien League" pointSize="17"/>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <segue destination="xIr-Uh-aDx" kind="show" id="9cQ-j1-IGA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dSb-mC-Kdy" firstAttribute="top" secondItem="QUm-a3-npc" secondAttribute="bottom" constant="80" id="7Cz-at-s2Z"/>
+                            <constraint firstAttribute="trailing" secondItem="QUm-a3-npc" secondAttribute="trailing" id="CcS-8c-NQj"/>
+                            <constraint firstItem="QUm-a3-npc" firstAttribute="leading" secondItem="pCa-sN-1WP" secondAttribute="leading" id="E7A-PX-hFk"/>
+                            <constraint firstItem="QUm-a3-npc" firstAttribute="top" secondItem="pCa-sN-1WP" secondAttribute="top" id="QZi-GK-bFs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LpF-yp-bpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2672.8000000000002" y="1172.5637181409297"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="Reh-Re-M3B">
+            <objects>
+                <viewController storyboardIdentifier="Main" title="Main" id="xIr-Uh-aDx" customClass="WallienPlayerViewController" customModule="WhereIsWallien" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="37j-aG-cOK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nhp-5h-ZSq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SwV-Ee-tlz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGg-1z-kEA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mL0-2v-gDA" userLabel="Content View">
+                                        <rect key="frame" x="8" y="8" width="359" height="503"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fbh-fr-9sX">
+                                                <rect key="frame" x="75" y="453" width="208" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="OWd-ny-CBj"/>
+                                                    <constraint firstAttribute="width" constant="208" id="ydq-mc-2rc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jogador" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqy-xD-obs">
+                                                <rect key="frame" x="8" y="456" width="64" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallien" translatesAutoresizingMaskIntoConstraints="NO" id="gTt-6D-f9k">
+                                                <rect key="frame" x="36" y="20" width="303" height="428"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHERE IS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCr-xL-eGA">
+                                                <rect key="frame" x="47" y="34" width="280" height="56"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="FFC-o8-8Sc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AlienLeague" family="Alien League" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WALLIEN ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqL-oA-mbw">
+                                                <rect key="frame" x="47" y="327" width="280" height="56"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="bsu-36-JnS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AlienLeague" family="Alien League" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5h9-RD-uZI">
+                                                <rect key="frame" x="304" y="451" width="39" height="30"/>
+                                                <fontDescription key="fontDescription" name="AlienLeague" family="Alien League" pointSize="20"/>
+                                                <state key="normal" title="Go!"/>
+                                                <connections>
+                                                    <segue destination="XmK-Xh-7FM" kind="show" identifier="WallienMap" id="cjU-ce-ctI"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insira um nome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gI-2M-yLb">
+                                                <rect key="frame" x="118" y="424" width="139" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AlienLeague" family="Alien League" pointSize="17"/>
+                                                <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="hqL-oA-mbw" firstAttribute="leading" secondItem="mL0-2v-gDA" secondAttribute="leading" constant="47" id="6EL-Sl-dTu"/>
+                                            <constraint firstItem="5h9-RD-uZI" firstAttribute="top" secondItem="gTt-6D-f9k" secondAttribute="bottom" constant="3" id="8gd-2N-aVW"/>
+                                            <constraint firstItem="Fbh-fr-9sX" firstAttribute="top" secondItem="gTt-6D-f9k" secondAttribute="bottom" constant="5" id="Az8-AU-Nv7"/>
+                                            <constraint firstItem="hqL-oA-mbw" firstAttribute="leading" secondItem="bCr-xL-eGA" secondAttribute="leading" id="HxL-Q4-kcf"/>
+                                            <constraint firstItem="gTt-6D-f9k" firstAttribute="centerX" secondItem="hqL-oA-mbw" secondAttribute="centerX" id="IMz-oe-IHg"/>
+                                            <constraint firstItem="gTt-6D-f9k" firstAttribute="centerX" secondItem="bCr-xL-eGA" secondAttribute="centerX" id="LIA-J3-l1P"/>
+                                            <constraint firstItem="5h9-RD-uZI" firstAttribute="top" secondItem="hqL-oA-mbw" secondAttribute="bottom" constant="68" id="Mzd-YK-tZo"/>
+                                            <constraint firstAttribute="trailing" secondItem="5h9-RD-uZI" secondAttribute="trailing" constant="16" id="OR8-eY-xth"/>
+                                            <constraint firstItem="Fbh-fr-9sX" firstAttribute="baseline" secondItem="aqy-xD-obs" secondAttribute="baseline" id="P4r-2r-Ngs"/>
+                                            <constraint firstItem="Fbh-fr-9sX" firstAttribute="centerX" secondItem="mL0-2v-gDA" secondAttribute="centerX" id="Ue5-RC-yKP"/>
+                                            <constraint firstItem="Fbh-fr-9sX" firstAttribute="leading" secondItem="aqy-xD-obs" secondAttribute="trailing" constant="3" id="WcF-ic-UkR"/>
+                                            <constraint firstItem="gTt-6D-f9k" firstAttribute="top" secondItem="mL0-2v-gDA" secondAttribute="top" constant="20" id="cXe-hY-VPF"/>
+                                            <constraint firstAttribute="width" constant="359" id="dPY-KV-8py"/>
+                                            <constraint firstAttribute="bottom" secondItem="5h9-RD-uZI" secondAttribute="bottom" constant="22" id="fv0-5z-gjV"/>
+                                            <constraint firstItem="5h9-RD-uZI" firstAttribute="leading" secondItem="Fbh-fr-9sX" secondAttribute="trailing" constant="21" id="kCL-If-Ui0"/>
+                                            <constraint firstAttribute="trailing" secondItem="gTt-6D-f9k" secondAttribute="trailing" constant="20" id="rEb-Ij-cbd"/>
+                                            <constraint firstItem="gTt-6D-f9k" firstAttribute="leading" secondItem="mL0-2v-gDA" secondAttribute="leading" constant="36" id="s3k-N1-hho"/>
+                                            <constraint firstAttribute="height" constant="503" id="s66-ur-Lod"/>
+                                            <constraint firstAttribute="bottom" secondItem="Fbh-fr-9sX" secondAttribute="bottom" constant="20" id="tk8-H9-j4L"/>
+                                            <constraint firstItem="bCr-xL-eGA" firstAttribute="top" secondItem="mL0-2v-gDA" secondAttribute="top" constant="34" id="yE2-8a-ERr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mL0-2v-gDA" firstAttribute="trailing" secondItem="ZGg-1z-kEA" secondAttribute="trailingMargin" id="248-1w-zHg"/>
+                                    <constraint firstAttribute="bottom" secondItem="mL0-2v-gDA" secondAttribute="bottom" constant="156" id="LLl-Ol-8FC"/>
+                                    <constraint firstItem="mL0-2v-gDA" firstAttribute="leading" secondItem="ZGg-1z-kEA" secondAttribute="leadingMargin" id="OGd-np-9vq"/>
+                                    <constraint firstItem="mL0-2v-gDA" firstAttribute="top" secondItem="ZGg-1z-kEA" secondAttribute="topMargin" id="ejY-Iq-sOu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZGg-1z-kEA" firstAttribute="bottom" secondItem="Nhp-5h-ZSq" secondAttribute="top" id="BYi-SZ-9Q6"/>
+                            <constraint firstAttribute="trailing" secondItem="ZGg-1z-kEA" secondAttribute="trailing" id="Cq0-A4-Dmn"/>
+                            <constraint firstItem="ZGg-1z-kEA" firstAttribute="top" secondItem="SwV-Ee-tlz" secondAttribute="top" id="JyB-G6-Awc"/>
+                            <constraint firstItem="ZGg-1z-kEA" firstAttribute="leading" secondItem="SwV-Ee-tlz" secondAttribute="leading" id="kg5-5k-oC4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inserNameAlert" destination="7gI-2M-yLb" id="zr4-Z5-xaP"/>
+                        <outlet property="playerName" destination="Fbh-fr-9sX" id="8CJ-Jg-CKQ"/>
+                        <outlet property="theScrollView" destination="ZGg-1z-kEA" id="JWZ-1P-dfP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="25c-Xi-uxC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541.60000000000002" y="292.80359820089956"/>
+        </scene>
+        <!--YouW In View Controller-->
+        <scene sceneID="d7D-OL-FOJ">
+            <objects>
+                <viewController id="ug8-bt-C11" customClass="YouWInViewController" customModule="WhereIsWallien" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wpD-aM-Rpi"/>
+                        <viewControllerLayoutGuide type="bottom" id="fhX-jz-IYm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WxV-Sx-A96">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image7" translatesAutoresizingMaskIntoConstraints="NO" id="RwQ-a5-q1j">
+                                <rect key="frame" x="0.0" y="100" width="359" height="467"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Win!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6R-NO-S4e">
+                                <rect key="frame" x="0.0" y="0.0" width="359" height="100"/>
+                                <fontDescription key="fontDescription" name="AlienLeague" family="Alien League" pointSize="80"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWK-d0-roe">
+                                <rect key="frame" x="36" y="617" width="76" height="30"/>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <segue destination="xIr-Uh-aDx" kind="show" id="Xyn-Lr-f6e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvJ-bn-Hkv">
+                                <rect key="frame" x="268" y="617" width="71" height="30"/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <segue destination="XmK-Xh-7FM" kind="show" id="RV7-4D-EVa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RwQ-a5-q1j" firstAttribute="top" secondItem="S6R-NO-S4e" secondAttribute="bottom" id="1mq-Sd-xQ5"/>
+                            <constraint firstItem="fhX-jz-IYm" firstAttribute="top" secondItem="RwQ-a5-q1j" secondAttribute="bottom" constant="100" id="EeL-NO-18m"/>
+                            <constraint firstItem="RwQ-a5-q1j" firstAttribute="top" secondItem="WxV-Sx-A96" secondAttribute="top" constant="100" id="EuG-HQ-TM4"/>
+                            <constraint firstItem="RwQ-a5-q1j" firstAttribute="leading" secondItem="WxV-Sx-A96" secondAttribute="leading" id="Nbh-rC-HmF"/>
+                            <constraint firstItem="S6R-NO-S4e" firstAttribute="trailing" secondItem="RwQ-a5-q1j" secondAttribute="trailing" id="PlS-oG-g53"/>
+                            <constraint firstItem="fhX-jz-IYm" firstAttribute="top" secondItem="KvJ-bn-Hkv" secondAttribute="bottom" constant="20" id="QlG-Lb-qeq"/>
+                            <constraint firstItem="S6R-NO-S4e" firstAttribute="top" secondItem="WxV-Sx-A96" secondAttribute="top" id="UeZ-yX-1Hn"/>
+                            <constraint firstItem="fhX-jz-IYm" firstAttribute="top" secondItem="oWK-d0-roe" secondAttribute="bottom" constant="20" id="iki-lJ-22P"/>
+                            <constraint firstItem="S6R-NO-S4e" firstAttribute="leading" secondItem="RwQ-a5-q1j" secondAttribute="leading" id="jKc-c1-Cbk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KvJ-bn-Hkv" secondAttribute="trailing" constant="20" id="qU0-UI-ais"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RwQ-a5-q1j" secondAttribute="trailing" id="qYz-CE-NHT"/>
+                            <constraint firstItem="oWK-d0-roe" firstAttribute="leading" secondItem="WxV-Sx-A96" secondAttribute="leadingMargin" constant="20" id="tgk-16-vJA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qqq-8s-cv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2540" y="293"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Wallien" width="150" height="150"/>
+        <image name="WallienMap" width="1795" height="1122"/>
+        <image name="game over wallien" width="452" height="640"/>
+        <image name="image7" width="320" height="210"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DaG-Na-1Y5"/>
+        <segue reference="9cQ-j1-IGA"/>
+    </inferredMetricsTieBreakers>
+</document>

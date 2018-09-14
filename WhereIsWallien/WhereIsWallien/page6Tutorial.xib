@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ALIEN5.TTF">
+            <string>AlienLeague</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Cvp-aj-wgw">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image6" translatesAutoresizingMaskIntoConstraints="NO" id="iRD-5T-AaD">
+                    <rect key="frame" x="0.0" y="56" width="375" height="551"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="clique sobre ele" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fyE-TB-egf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="AlienLeague" family="Alien League" pointSize="56"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="se o encontrar" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0ec-2p-sgQ">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="AW7-Hz-dDN"/>
+                        <constraint firstAttribute="height" constant="60" id="oWm-VN-y7c"/>
+                    </constraints>
+                    <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="AlienLeague" family="Alien League" pointSize="56"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0ec-2p-sgQ" firstAttribute="leading" secondItem="Cvp-aj-wgw" secondAttribute="leading" id="98I-ct-uok"/>
+                <constraint firstItem="iRD-5T-AaD" firstAttribute="top" secondItem="Cvp-aj-wgw" secondAttribute="top" constant="56" id="Mf1-yz-fNI"/>
+                <constraint firstAttribute="trailing" secondItem="fyE-TB-egf" secondAttribute="trailing" id="be6-kr-FFg"/>
+                <constraint firstItem="iRD-5T-AaD" firstAttribute="top" secondItem="fyE-TB-egf" secondAttribute="bottom" id="elr-8s-8jR"/>
+                <constraint firstItem="fyE-TB-egf" firstAttribute="top" secondItem="Cvp-aj-wgw" secondAttribute="top" id="f23-hO-e3P"/>
+                <constraint firstAttribute="bottom" secondItem="iRD-5T-AaD" secondAttribute="bottom" constant="60" id="hat-Lh-avP"/>
+                <constraint firstItem="fyE-TB-egf" firstAttribute="leading" secondItem="Cvp-aj-wgw" secondAttribute="leading" id="jBS-3C-tiD"/>
+                <constraint firstAttribute="trailing" secondItem="0ec-2p-sgQ" secondAttribute="trailing" id="lbH-YX-6Qc"/>
+                <constraint firstAttribute="trailing" secondItem="iRD-5T-AaD" secondAttribute="trailing" id="qmI-ce-apY"/>
+                <constraint firstAttribute="bottom" secondItem="0ec-2p-sgQ" secondAttribute="bottom" id="uyG-s1-FGI"/>
+                <constraint firstItem="iRD-5T-AaD" firstAttribute="leading" secondItem="Cvp-aj-wgw" secondAttribute="leading" id="vFQ-6F-GSv"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="73.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image6" width="320" height="210"/>
+    </resources>
+</document>
